@@ -184,8 +184,7 @@
                 </ul>
             </nav>
             <div class="header__contacts flex-column">
-                <button class="header__search header__contacts-item" data-bs-toggle="modal"
-                    data-bs-target="#modal-search">
+                <button class="header__search header__contacts-item header__search-btn-mob">
                     <img src="img/header/search-white.svg" alt="img" class="header__search-img">
                     Поиск
                 </button>
@@ -212,7 +211,6 @@
                 </div>
             </div>
         </div>
-
     </div><!-- /search-mob -->
 
 
@@ -240,7 +238,7 @@
             </ul>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="d-none d-lg-block col-4">
                 <h3 class="service__nav-title">
                     Услуги компании
                 </h3>
@@ -321,7 +319,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8">
                 <h1 class="service__title page-title">
                     Ремонтируем объекты и прилегающие коммуникации
                 </h1>
@@ -461,7 +459,7 @@
 			<section class="contacts" style="background-image: url('img/contacts/img.png');">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 mb-5 mb-lg-0">
                 <h2 class="contacts__title text-white">
                     Контакты
                 </h2>
@@ -493,18 +491,18 @@
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-lg-6 mt-3 mt-lg-0">
                 <h2 class="contacts__title text-white border-0">
                     Обратная связь
                 </h2>
                 <form action="#" class="contacts-form">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="input-wrapper">
                                 <input type="text" class="input-form" placeholder="Ваше имя">
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="input-wrapper">
                                 <input type="email" class="input-form" placeholder="Ваш e-mail">
                             </div>
@@ -517,7 +515,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="agreement-wrapper align-items-center">
+                    <div class="agreement-wrapper align-items-start align-items-sm-center">
                         <p class="form-text">
                             Мы свяжемся с вами в ближайшее время, чтобы уточнить детали
                         </p>
@@ -536,7 +534,7 @@
     <div class="footer__top">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <h3 class="footer__title">
                         Услуги компании
                     </h3>
@@ -595,7 +593,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-6 col-lg-3 mt-5 mt-sm-0">
                     <div class="d-flex h-100 gap-3 justify-content-between flex-column">
                         <div class="d-block">
                             <h3 class="footer__title">
@@ -634,7 +632,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="d-block">
+                        <div class="d-none d-sm-block">
                             <img src="img/footer/img.png" alt="icon" class="footer__icon">
                             <span class="footer__text">
                                 Работаем по международным стандартам качества
@@ -642,7 +640,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-6 col-lg-2 mt-5 mt-lg-0">
                     <h3 class="footer__title">
                         Новости
                     </h3>
@@ -672,7 +670,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-6 col-lg-3 mt-5 mt-lg-0">
                     <h3 class="footer__title">
                         Дополнительно
                     </h3>
@@ -720,6 +718,12 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="d-block d-sm-none mt-5">
+                        <img src="img/footer/img.png" alt="icon" class="footer__icon">
+                        <span class="footer__text">
+                            Работаем по международным стандартам качества
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -727,17 +731,17 @@
     <div class="footer__bottom">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-3 col-xl-4">
                     <span class="copyright">
                         © 2022 ООО "Энергия"
                     </span>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-5 col-xl-4">
                     <a href="#" class="footer__politic">
                         Политика обработки персональных данных
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-xl-4">
                     <a href="#" class="footer__develop" target="_blank">
                         <img src="img/footer/icon.svg" alt="icon" class="footer__img">
                         <span> Разработка сайта – Вангер.рф</span>
@@ -760,12 +764,12 @@
       <h2 class="page-title border-0">Обратная связь</h2>
       <form action="#" class="contacts-form">
         <div class="row">
-          <div class="col-6">
+          <div class="col-sm-6">
             <div class="input-wrapper">
               <input type="text" class="input-form" placeholder="Ваше имя">
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6">
             <div class="input-wrapper">
               <input type="email" class="input-form" placeholder="Ваш e-mail">
             </div>
@@ -778,7 +782,7 @@
             </div>
           </div>
         </div>
-        <div class="agreement-wrapper align-items-center">
+        <div class="agreement-wrapper align-items-start align-items-sm-center">
           <p class="form-text">
             Мы свяжемся с вами в ближайшее время, чтобы уточнить детали
           </p>
@@ -807,8 +811,6 @@
         <button class="form-btn button">
           Искать
         </button>
-
-
       </form>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-search">
         <img src="img/icons/modal-close.svg" alt="icon">

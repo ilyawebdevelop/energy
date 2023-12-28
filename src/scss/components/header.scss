@@ -38,6 +38,12 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    @media(max-width: 575px){
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        z-index: 4;
+    }
 
     .header__nav-link {
         color: #FFF;
@@ -122,12 +128,14 @@
     width: 100%;
     height: 100%;
     background-color: #2162AF;
-    z-index: 2;
+    z-index: 4;
     padding-top: 20px;
     padding-bottom: 40px;
     overflow-y: scroll;
     &.active {
         display: block;
+        -webkit-animation: shows 0.5s;
+        animation: shows 0.5s;
     }  
     .logo-text {
         font-size: 11px;
@@ -188,9 +196,12 @@
     }
 }
 .header-mob-close {
-    position: absolute;
-    right: 20px;
-    top: 16px;
+    // position: absolute;
+    // right: 30px;
+    // top: 16px;
+    position: relative;
+    bottom: 13px;
+    left: 6px;
 }
 .search-mob{
     padding-top: 25px;
@@ -198,13 +209,15 @@
  
     &.active {
         display: block;
+        -webkit-animation: shows 0.5s;
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: #fff;
-        z-index: 2;
+        z-index: 4;
     }
 }
 .search-mob-top {

@@ -184,8 +184,7 @@
                 </ul>
             </nav>
             <div class="header__contacts flex-column">
-                <button class="header__search header__contacts-item" data-bs-toggle="modal"
-                    data-bs-target="#modal-search">
+                <button class="header__search header__contacts-item header__search-btn-mob">
                     <img src="img/header/search-white.svg" alt="img" class="header__search-img">
                     Поиск
                 </button>
@@ -212,7 +211,6 @@
                 </div>
             </div>
         </div>
-
     </div><!-- /search-mob -->
 
 
@@ -294,7 +292,148 @@
         <h2 class="services__title">
             Услуги компании
         </h2>
-        <div class="row services-list">
+
+        <div class="swiper services-slider">
+            <div class="swiper-wrapper">
+
+                <a class="swiper-slide services-slide services__item services__item-wide" href="#">
+                    <div class="services-card" style="background-image: url('img/services/image.jpg');">
+                        <h3 class="services-card__title">
+                            Строительство промышленных объектов и коммуникаций
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="img/services/image.jpg" alt="img" class="services__item-img">
+                    </div>
+                </a><!-- / services-slide-->
+
+                <div class="swiper-slide services-slide services__item services__item-short">
+                    <a class="services-card" href="#" style="background-image: url('img/services/img-2.png');">
+                        <h3 class="services-card__title">
+                            Пусконаладочные работы
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div><!-- / services-slide-->
+
+                <div class="swiper-slide services-slide services__item services__item-short">
+                    <a class="services-card" href="#" style="background-image: url('img/services/img-3.png');">
+                        <h3 class="services-card__title">
+                            Проектные работы для объектов любой сложности
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div><!-- / services-slide-->
+
+                <div class="swiper-slide services-slide services__item services__item-short">
+                    <a class="services-card" href="#" style="background-image: url('img/services/img-4.png');">
+                        <h3 class="services-card__title">
+                            Изыскательные работы
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div><!-- / services-slide-->
+
+                <div class="swiper-slide services-slide services__item services__item-short">
+                    <a class="services-card" href="#" style="background-image: url('img/services/img-5.png');">
+                        <h3 class="services-card__title">
+                            Ремонт объектов и прилегающих коммуникаций
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div><!-- / services-slide-->
+
+                <a class="swiper-slide services-slide services__item services__item-wide" href="#">
+                    <div class="services-card" style="background-image: url('img/services/img-6.png');">
+                        <h3 class="services-card__title">
+                            Современная передвижная электротехническая лаборатория
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="img/services/img-6.png" alt="img" class="services__item-img">
+                    </div>
+                </a><!-- / services-slide-->
+
+                <a class="swiper-slide services-slide services__item services__item-wide" href="#">
+                    <div class="services-card" style="background-image: url('img/services/img-7.png');">
+                        <h3 class="services-card__title">
+                            Изготовление металлических конструкций
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="img/services/img-7.png" alt="img" class="services__item-img">
+                    </div>
+                </a><!-- / services-slide-->
+
+                <div class="swiper-slide services-slide services__item services__item-short">
+                    <a class="services-card" href="#" style="background-image: url('img/services/img-8.png');">
+                        <h3 class="services-card__title">
+                            Сварочные работы в любых условиях
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div><!-- / services-slide-->
+
+                <div class="swiper-slide services-slide services__item services__item-short">
+                    <a class="services-card" href="#" style="background-image: url('img/services/img-9.png');">
+                        <h3 class="services-card__title">
+                            Работы по неразрушающему методу контроля
+                        </h3>
+                        <div class="services-card__btn">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div><!-- / services-slide-->
+
+            </div>      
+
+        </div>
+        <div class="d-flex mt-4 gap-3">
+            <div class="services__pagination swiper-pagination flex-wrap">
+            </div>
+            <div class="slider-count">
+                <span>1</span> / 9
+            </div>
+        </div>
+
+        <!-- <div class="row services-list">
             <div class="col-6">
                 <a class="services__item services__item-wide" href="#">
 
@@ -381,7 +520,6 @@
                         <img src="img/services/img-6.png" alt="img" class="services__item-img">
                     </div>
                 </a>
-
             </div>
             <div class="col-6">
                 <a class="services__item services__item-wide" href="#">
@@ -425,13 +563,13 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>		
 			<section class="about" style="background-image: url('img/about/img-1.jpg');">
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-xl-6 col-xxl-5">
                 <h2 class="about__title text-white">
                     О компании
                 </h2>
@@ -449,9 +587,9 @@
                     <img src="img/intro/arrow.svg" alt="img">
                 </button>
             </div>
-            <div class="col-1"></div>
-            <div class="col-6">
-                <img src="img/about/img-2.jpg" alt="img" class="about__img">
+            <div class="d-none d-xxl-block col-xxl-1"></div>
+            <div class="col-6 col-xxl-6">
+                <img src="img/about/img-2.jpg" alt="img" class="about__img d-none d-lg-block">
             </div>
         </div>
         <nav class="about__nav">
@@ -488,6 +626,11 @@
             </div>
         </nav>
 
+    </div>
+    <div class="about-sm-img">
+        <div class="container">
+            <img src="img/about/img-2.jpg" alt="img" class="about__img d-block d-lg-none">
+        </div>
     </div>
 
 </section>	
@@ -706,7 +849,7 @@
 			<section class="contacts" style="background-image: url('img/contacts/img.png');">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 mb-5 mb-lg-0">
                 <h2 class="contacts__title text-white">
                     Контакты
                 </h2>
@@ -738,18 +881,18 @@
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-lg-6 mt-3 mt-lg-0">
                 <h2 class="contacts__title text-white border-0">
                     Обратная связь
                 </h2>
                 <form action="#" class="contacts-form">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="input-wrapper">
                                 <input type="text" class="input-form" placeholder="Ваше имя">
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="input-wrapper">
                                 <input type="email" class="input-form" placeholder="Ваш e-mail">
                             </div>
@@ -762,7 +905,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="agreement-wrapper align-items-center">
+                    <div class="agreement-wrapper align-items-start align-items-sm-center">
                         <p class="form-text">
                             Мы свяжемся с вами в ближайшее время, чтобы уточнить детали
                         </p>
@@ -783,7 +926,7 @@
     <div class="footer__top">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <h3 class="footer__title">
                         Услуги компании
                     </h3>
@@ -842,7 +985,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-6 col-lg-3 mt-5 mt-sm-0">
                     <div class="d-flex h-100 gap-3 justify-content-between flex-column">
                         <div class="d-block">
                             <h3 class="footer__title">
@@ -881,7 +1024,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="d-block">
+                        <div class="d-none d-sm-block">
                             <img src="img/footer/img.png" alt="icon" class="footer__icon">
                             <span class="footer__text">
                                 Работаем по международным стандартам качества
@@ -889,7 +1032,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-6 col-lg-2 mt-5 mt-lg-0">
                     <h3 class="footer__title">
                         Новости
                     </h3>
@@ -919,7 +1062,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-6 col-lg-3 mt-5 mt-lg-0">
                     <h3 class="footer__title">
                         Дополнительно
                     </h3>
@@ -967,6 +1110,12 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="d-block d-sm-none mt-5">
+                        <img src="img/footer/img.png" alt="icon" class="footer__icon">
+                        <span class="footer__text">
+                            Работаем по международным стандартам качества
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -974,17 +1123,17 @@
     <div class="footer__bottom">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-3 col-xl-4">
                     <span class="copyright">
                         © 2022 ООО "Энергия"
                     </span>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-5 col-xl-4">
                     <a href="#" class="footer__politic">
                         Политика обработки персональных данных
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-xl-4">
                     <a href="#" class="footer__develop" target="_blank">
                         <img src="img/footer/icon.svg" alt="icon" class="footer__img">
                         <span> Разработка сайта – Вангер.рф</span>
@@ -1007,12 +1156,12 @@
       <h2 class="page-title border-0">Обратная связь</h2>
       <form action="#" class="contacts-form">
         <div class="row">
-          <div class="col-6">
+          <div class="col-sm-6">
             <div class="input-wrapper">
               <input type="text" class="input-form" placeholder="Ваше имя">
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6">
             <div class="input-wrapper">
               <input type="email" class="input-form" placeholder="Ваш e-mail">
             </div>
@@ -1025,7 +1174,7 @@
             </div>
           </div>
         </div>
-        <div class="agreement-wrapper align-items-center">
+        <div class="agreement-wrapper align-items-start align-items-sm-center">
           <p class="form-text">
             Мы свяжемся с вами в ближайшее время, чтобы уточнить детали
           </p>
@@ -1054,8 +1203,6 @@
         <button class="form-btn button">
           Искать
         </button>
-
-
       </form>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-search">
         <img src="img/icons/modal-close.svg" alt="icon">

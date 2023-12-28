@@ -1,5 +1,12 @@
 .news {
   padding-top: 65px;
+  @media(max-width: 1400px){
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  @media(max-width: 767px){
+    padding-top: 30px;
+  }
   .slider-btn {
     border-color: #2162AF;
 
@@ -9,6 +16,9 @@
   }
   &-slider {
     overflow: visible;
+    @media(max-width: 575px){
+      padding-right: 60px;
+    }
   }
   &-slide {
     &__date {
@@ -27,6 +37,11 @@
       margin-bottom: 20px;
       margin-top: 20px;
       transition: color .2s linear;
+      @media(max-width: 1400px){
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
       &:hover {
         color: rgb(252, 117, 25);
       }
@@ -38,6 +53,10 @@
       line-height: 150%;
       font-family: 'latomedium';
       margin-bottom: 20px;
+      @media(max-width: 1400px){
+        margin-bottom: 16px;
+        font-size: 14px;
+      }
     }
 
     &__link {
@@ -67,4 +86,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  @media(max-width: 1400px){
+    margin-bottom: 30px;
+  }
 }

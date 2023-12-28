@@ -1,7 +1,7 @@
 <section class="about" style="background-image: url('@img/about/img-1.jpg');">
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-xl-6 col-xxl-5">
                 <h2 class="about__title text-white">
                     О компании
                 </h2>
@@ -19,9 +19,9 @@
                     <img src="@img/intro/arrow.svg" alt="img">
                 </button>
             </div>
-            <div class="col-1"></div>
-            <div class="col-6">
-                <img src="@img/about/img-2.jpg" alt="img" class="about__img">
+            <div class="d-none d-xxl-block col-xxl-1"></div>
+            <div class="col-6 col-xxl-6">
+                <img src="@img/about/img-2.jpg" alt="img" class="about__img d-none d-lg-block">
             </div>
         </div>
         <nav class="about__nav">
@@ -58,6 +58,11 @@
             </div>
         </nav>
 
+    </div>
+    <div class="about-sm-img">
+        <div class="container">
+            <img src="@img/about/img-2.jpg" alt="img" class="about__img d-block d-lg-none">
+        </div>
     </div>
 
 </section>

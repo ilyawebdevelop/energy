@@ -1,6 +1,9 @@
 .intro {
     padding-top: 0;
     padding-bottom: 0;
+    @media(max-width: 575px){
+        padding-top: 80px;
+    }
 }
 .intro-slide {    
     padding-top: 100px;
