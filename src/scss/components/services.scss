@@ -1,0 +1,246 @@
+.services {
+  padding-top: 48px;
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 35px;
+    @media(max-width: 1400px){
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.services-card {
+  padding: 30px 50px 30px 30px;
+  position: relative;
+}
+
+.services__item-wide {
+  display: flex;
+  transition: background-color .2s linear;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.07);
+
+  &:hover {
+    background-color: #2162AF;
+
+    .services-card__title {
+      color: #fff;
+    }
+
+    .services-card__btn {
+      border-color: transparent;
+      background-color: #fff;
+
+      svg {
+        stroke: #FC7519;
+      }
+    }
+  }
+
+  .img-wrapper {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.services__item-short {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 25px;
+  height: 100%;
+
+  .services-card__title {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  .services-card__btn {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+
+    svg {
+      stroke: #fff;
+    }
+  }
+
+  .services-card {
+    grid-column: 6 span;
+    position: relative;
+
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #2162AF, $alpha: .8);
+      opacity: 0;
+      transition: opacity .2s linear;
+    }
+
+    &:hover {
+      .services-card__title {
+        color: #fff;
+      }
+
+      .services-card__btn {
+        border-color: transparent;
+        background-color: #fff;
+
+        svg {
+          stroke: #FC7519;
+        }
+      }
+    }
+  }
+}
+
+.services-card__btn {
+  border-radius: 50%;
+  border: 1px solid #2162AF;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  transition: background-color .2s linear;
+  z-index: 1;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: #2162AF;
+  }
+}
+
+.services-card__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #2162AF;
+}
+
+.services__item-img {
+  width: 270px;
+  min-width: 270px;
+  object-fit: cover;
+  height: 320px;
+}
+
+.services-list {
+  row-gap: 40px;
+}
+
+.services-card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service {
+  padding-top: 0;
+}
+
+.service__nav-link {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #EAEAEA;
+  justify-content: space-between;
+  align-items: center;
+  transition: color .2s linear, background-color .2s linear;
+  column-gap: 10px;
+  color: #323232;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:hover {
+    color: #FC7519;
+    background-color: #F6F6F6;
+
+    svg {
+      stroke: #FC7519;
+    }
+  }
+
+  span {
+    max-width: 300px;
+  }
+
+  svg {
+    fill: transparent;
+    stroke: #BFBFBF;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.service__nav {
+  padding-right: 10px;
+}
+
+.service__nav-title {
+  color: #FC7519;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.projects-service-slider {
+  .projects-slide__text {
+    color: #666;
+    opacity: 1;
+  }
+
+  .projects-slide__title {
+    color: #2162AF;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.48px;
+    text-decoration: none;
+  }
+  .projects-slide__cat {
+    color: #2162AF;
+    svg {
+      fill: transparent;
+      stroke: #2162AF;
+    }
+  }
+}

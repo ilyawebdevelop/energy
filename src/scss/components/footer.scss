@@ -1,0 +1,89 @@
+// Footer
+.footer {
+
+  &__top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__bottom {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #EAEAEA;
+  }
+
+  &__develop {
+    display: flex;
+    column-gap: 8px;
+    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 24px;
+    color: #323232;
+    font-family: 'latoregular';
+    transition: color .2s linear;
+
+    &:hover {
+      color: #FC7519;     
+    }      
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.48px;
+  }
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.42px;
+  color: #323232;
+  transition: color .2s linear;
+
+  &:hover {
+    color: #FC7519;
+  }
+}
+
+.footer__nav-item {
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+.footer__icon {
+  margin-bottom: 30px;
+}
+
+.footer__text {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.42px;
+  font-size: 14px;
+}
+.copyright {
+  font-size: 14px;
+  line-height: 24px;
+  color: #323232;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+.footer__politic {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  font-family: 'Inter';
+  font-weight: 400;
+  border-bottom: 1px solid #323232;
+  width: fit-content;
+  transition: color .2s linear, border-color .2s linear;
+
+  &:hover {
+    color: #FC7519;
+    border-color: #FC7519;
+  }  
+}

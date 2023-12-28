@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Услуга</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+    <div class="header__top">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">
+                            Наши партнеры
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">
+                            Отзывы о работе
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">
+                            Документы
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <button class="header__search header__contacts-item" data-bs-toggle="modal"
+                    data-bs-target="#modal-search">
+                    <img src="img/header/img1.svg" alt="img" class="header__search-img">
+                    Поиск
+                </button>
+                <button class="header__feedback header__contacts-item" data-bs-toggle="modal"
+                    data-bs-target="#modal-order">
+                    <img src="img/header/img3.svg" alt="img">
+                    Обратная связь
+                </button>
+                <a href="tel:83952252352" class="header__contacts-phone header__contacts-item">
+                    <img src="img/header/img2.svg" alt="img">
+                    8 (3952) 252-352
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header__left">
+                <a href="/" class="header__logo">
+                    <img src="img/header/logo.svg" alt="img" class="header__logo">
+                </a>
+                <span>
+                    проектирование,
+                    строительство, энергетика
+                </span>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Услуги компании
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Наши работы
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Карьера
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="toggle">
+                <div class="top-bun"></div>
+                <div class="meat"></div>
+                <div class="bottom-bun"></div>
+            </div><!-- /Hamburger Menu -->
+
+        </div>
+
+    </div>
+
+    <div class="header-mob">
+        <div class="container d-block">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex flex-column align-items-end">
+                    <a href="/" class="header__logo">
+                        <img src="img/header/logo.svg" alt="img" class="header__logo">
+                    </a>
+                    <span class="logo-text">
+                        проектирование,
+                        строительство, энергетика
+                    </span>
+                </div>
+                <button type="button" class="header-mob-close">
+                    <img src="img/icons/menu-close.svg" alt="icon">
+                </button>
+            </div>
+            <nav class="header__nav d-block">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Услуги компании
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Наши работы
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Карьера
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header__nav header__nav--sm d-block">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">
+                            Наши партнеры
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">
+                            Отзывы о работе
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">
+                            Документы
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts flex-column">
+                <button class="header__search header__contacts-item" data-bs-toggle="modal"
+                    data-bs-target="#modal-search">
+                    <img src="img/header/search-white.svg" alt="img" class="header__search-img">
+                    Поиск
+                </button>
+                <button class="header__feedback header__contacts-item" data-bs-toggle="modal"
+                    data-bs-target="#modal-order">
+                    <img src="img/header/chat-white.svg" alt="img">
+                    Обратная связь
+                </button>
+                <a href="tel:83952252352" class="header__contacts-phone header__contacts-item">
+                    <img src="img/header/phone-white.svg" alt="img">
+                    8 (3952) 252-352
+                </a>
+            </div>
+
+        </div>
+    </div><!-- /header-mob -->
+    <div class="search-mob">
+        <div class="search-mob-top">
+            <div class="container">
+                <div class="search-mob-wrapper">
+                    <button class="search-mob-back"><img src="img/icons/search-arrow-prev.svg" alt="icon"></button>
+                    <input type="text" class="search-input" placeholder="Поиск по сайту">
+                    <button class="search-mob-btn"><img src="img/icons/search-gray.svg" alt="icon"></button>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /search-mob -->
+
+
+</header>
+		<main class="main">
+			<section class="service">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">
+                        Услуги
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>
+                        Капитальный ремонт и реконструкция
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h3 class="service__nav-title">
+                    Услуги компании
+                </h3>
+                <nav class="service__nav">
+                    <ul class="service__nav-list">
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                <span>Строительство объектов и коммуникаций</span>
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                <span>Пусконаладочные работы</span>
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                <span>Проектные работы</span>
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                <span>Изыскательные работы</span>
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                Капитальный ремонт и реконструкция
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                Изготовление металлоконструкций
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                Сварочные работы
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                Сварочные работы
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service__nav-item">
+                            <a href="#" class="service__nav-link">
+                                Электротехническая лаборатория
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-8">
+                <h1 class="service__title page-title">
+                    Ремонтируем объекты и прилегающие коммуникации
+                </h1>
+                <div class="content">
+                    <p>ООО «Энергия» предоставляет услуги по проведению капитального ремонта и реконструкции объектов
+                        энергоснабжения, промышленности и коммуникаций.
+
+                    </p>
+                    <p>Проведение капитального ремонта позволяет восстановить исправность конструкции и инженерной
+                        системы для улучшения показателей эксплуатации. Проводя такие работы наши специалисты устраняют
+                        неисправные элементы, путем восстановления или их замены на новые. В ходе капитального ремонта
+                        можно модернизировать и произвести перепланировку объекта не меняя его технические показатели.
+
+                    </p>
+                    <p>
+                        Капитальный ремонт и реконструкция, достаточно дорогостоящие работы. Однако их производство
+                        необходимо выполнять сразу по истечению срока эксплуатации объекта.
+                    </p>
+                    <p>
+                        ООО «Энергия» выполняет следующие виды капитального ремонта:
+                    </p>
+                    <ul>
+                        <li>
+                            Комплексный – работы производятся по всему объекту или секциям, во время которых идет
+                            устранения всех неисправностей;
+                        </li>
+                        <li>
+                            Выборочный – работы ведутся на отдельных элементах объекта для устранения физического
+                            износа;
+                        </li>
+                        <li>
+                            Ремонт коммуникаций – работы касаются замены сетей водо-, тепло-, газо- и электроснабжения,
+                            а также канализации.
+                        </li>
+                    </ul>
+                    <p>
+                        Не стоит откладывать проведение капитального ремонта и реконструкции, иначе, производя текущий
+                        ремонт, вы столкнетесь с необходимостью производства масштабных работ, которые вы не планировали
+                    </p>
+
+                </div>
+
+                <h2 class="section-title mt-4 border-0">Выполненные проекты</h2>
+                <div class="swiper projects-service-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide projects-slide ">
+                            <div class="projects-slide__img-wrapper">
+                                <span>
+                                    30 июн. 2016 - 12 окт. 2016
+                                </span>
+                                <img src="img/projects/image.jpg" alt="img" class="projects-slide__img">
+                            </div>
+                            <div class="projects-slide__text">
+                                АО "УргалУголь"
+                            </div>
+                            <a href="#" class="projects-slide__title">
+                                Строительно-монтажные работы ВЛ-6 кВ на фланговый ствол пласта В-12
+                            </a>
+                            <a href="#" class="projects-slide__cat">
+                                строительно-монтажные работы
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide projects-slide ">
+                            <div class="projects-slide__img-wrapper">
+                                <span>
+                                    2013 год
+                                </span>
+                                <img src="img/projects/image.jpg" alt="img" class="projects-slide__img">
+                            </div>
+                            <div class="projects-slide__text">
+                                ОАО "СУЭК-Красноярск" "Разрез "Бородинский им. М.И. Щадова""
+                            </div>
+                            <a href="#" class="projects-slide__title">
+                                Перенос ВЛ 110 кВ подстанции 110/6 кВ №22 "Разрез Бородинский им. М.И. Щадова"
+                            </a>
+                            <a href="#" class="projects-slide__cat">
+                                проектные работы
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide projects-slide ">
+                            <div class="projects-slide__img-wrapper">
+                                <span>
+                                    30 июн. 2016 - 12 окт. 2016
+                                </span>
+                                <img src="img/projects/image.jpg" alt="img" class="projects-slide__img">
+                            </div>
+                            <div class="projects-slide__text">
+                                АО "УргалУголь"
+                            </div>
+                            <a href="#" class="projects-slide__title">
+                                Строительно-монтажные работы ВЛ-6 кВ на фланговый ствол пласта В-12
+                            </a>
+                            <a href="#" class="projects-slide__cat">
+                                строительно-монтажные работы
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide projects-slide ">
+                            <div class="projects-slide__img-wrapper">
+                                <span>
+                                    2013 год
+                                </span>
+                                <img src="img/projects/image.jpg" alt="img" class="projects-slide__img">
+                            </div>
+                            <div class="projects-slide__text">
+                                ОАО "СУЭК-Красноярск" "Разрез "Бородинский им. М.И. Щадова""
+                            </div>
+                            <a href="#" class="projects-slide__title">
+                                Перенос ВЛ 110 кВ подстанции 110/6 кВ №22 "Разрез Бородинский им. М.И. Щадова"
+                            </a>
+                            <a href="#" class="projects-slide__cat">
+                                проектные работы
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>	
+			<section class="contacts" style="background-image: url('img/contacts/img.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="contacts__title text-white">
+                    Контакты
+                </h2>
+                <div class="contacts__wrapper">
+                    <div class="contacts__item">
+                        <span class="contacts__item-name">
+                            почта:
+                        </span>
+                        <a href="mailto:office@energy38.ru" class="contacts__item-text">office@energy38.ru</a>
+                    </div>
+                    <div class="contacts__item">
+                        <span class="contacts__item-name">
+                            Телефон:
+                        </span>
+                        <a href="tel:+73952252352" class="contacts__item-text">+7 (3952) 252-352</a>
+                    </div>
+                    <div class="contacts__item">
+                        <span class="contacts__item-name">
+                            ОФИС:
+                        </span>
+                        <a href="#" class="contacts__item-text">г.Иркутск, ул. Бурлова,6</a>
+                    </div>
+                    <div class="contacts__item">
+                        <span class="contacts__item-name">
+                            Почтовый адрес:
+                        </span>
+                        <a href="#" class="contacts__item-text">665413, Иркутская обл., г.Черемхово, а/я "Энергия"</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <h2 class="contacts__title text-white border-0">
+                    Обратная связь
+                </h2>
+                <form action="#" class="contacts-form">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-wrapper">
+                                <input type="text" class="input-form" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-wrapper">
+                                <input type="email" class="input-form" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <input type="text" class="input-form" placeholder="Текст сообщения">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agreement-wrapper align-items-center">
+                        <p class="form-text">
+                            Мы свяжемся с вами в ближайшее время, чтобы уточнить детали
+                        </p>
+                        <button class="form-btn button">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="footer__title">
+                        Услуги компании
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Строительство объектов и коммуникаций
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Пусконаладочные работы
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Проектные работы
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Изыскательные работы
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Капитальный ремонт и реконструкция
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Изготовление металлоконструкций
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Сварочные работы
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Неразрушающий метод контроля
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Электротехническая лаборатория
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex h-100 gap-3 justify-content-between flex-column">
+                        <div class="d-block">
+                            <h3 class="footer__title">
+                                Компания
+                            </h3>
+                            <nav class="footer__nav">
+                                <ul class="footer__nav-list">
+                                    <li class="footer__nav-item">
+                                        <a href="#" class="footer__nav-link">
+                                            ООО “Энергия” сейчас
+
+                                        </a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="#" class="footer__nav-link">
+                                            История компании
+                                        </a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="#" class="footer__nav-link">
+                                            Руководство компании
+
+                                        </a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="#" class="footer__nav-link">
+                                            Награды и благодарности
+
+                                        </a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="#" class="footer__nav-link">
+                                            Наша география
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="d-block">
+                            <img src="img/footer/img.png" alt="icon" class="footer__icon">
+                            <span class="footer__text">
+                                Работаем по международным стандартам качества
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h3 class="footer__title">
+                        Новости
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    СМИ о нас
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Мероприятия
+
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Объекты
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <h3 class="footer__title">
+                        Дополнительно
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Отзывы о работе
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Документация
+
+
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Партнёры
+
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Объекты
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Проекты
+
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Карьера
+
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <span class="copyright">
+                        © 2022 ООО "Энергия"
+                    </span>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="footer__politic">
+                        Политика обработки персональных данных
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="footer__develop" target="_blank">
+                        <img src="img/footer/icon.svg" alt="icon" class="footer__img">
+                        <span> Разработка сайта – Вангер.рф</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</footer>
+		<!-- modal -->
+<!-- order -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h2 class="page-title border-0">Обратная связь</h2>
+      <form action="#" class="contacts-form">
+        <div class="row">
+          <div class="col-6">
+            <div class="input-wrapper">
+              <input type="text" class="input-form" placeholder="Ваше имя">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="input-wrapper">
+              <input type="email" class="input-form" placeholder="Ваш e-mail">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="input-wrapper">
+              <input type="text" class="input-form" placeholder="Текст сообщения">
+            </div>
+          </div>
+        </div>
+        <div class="agreement-wrapper align-items-center">
+          <p class="form-text">
+            Мы свяжемся с вами в ближайшее время, чтобы уточнить детали
+          </p>
+          <button class="form-btn button">
+            Отправить
+          </button>
+        </div>
+      </form>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
+        <img src="img/icons/modal-close.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- search -->
+<div class="modal fade modal-order" id="modal-search" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h2 class="page-title border-0">Поиск</h2>
+      <form action="#" class="search-form">
+        <div class="input-search-wrapper">
+          <input class="search-input" type="search" placeholder="Введите запрос для поиска по сайту">
+        </div>
+        <button class="form-btn button">
+          Искать
+        </button>
+
+
+      </form>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-search">
+        <img src="img/icons/modal-close.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

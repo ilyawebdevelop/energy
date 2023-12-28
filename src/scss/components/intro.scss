@@ -1,0 +1,105 @@
+.intro {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.intro-slide {    
+    padding-top: 100px;
+    height: auto;
+    @media(max-width: 1400px){
+        padding-top: 60px;
+    }
+    @media(max-width: 767px){
+        padding-top: 40px;
+    }
+  
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.25);
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 150px;
+        height: 100%;
+        @media(max-width: 1400px){
+            padding-bottom: 100px;
+        }
+    }
+}
+.intro-slide__title {
+    color: #FFF;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;  
+    max-width: 760px;
+    @media(max-width: 1400px){
+        font-size: 45px;
+    }
+    @media(max-width: 767px){
+        font-size: 32px;
+    }
+}
+.intro-slide__text {
+    color: #FFF;   
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'latosemibold';
+    line-height: 120%; /* 28.8px */    
+    margin-top: 30px;
+    max-width: 560px;
+    @media(max-width: 1400px){
+        font-size: 20px;
+    }
+    @media(max-width: 767px){
+        margin-top: 18px;
+
+    }
+}
+.intro-slider__wrapper {
+    position: relative;
+}
+.intro__bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+width: 100%;
+left: 0;
+}
+.intro__bottom-img {
+    margin-left: auto;
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    @media(max-width: 1400px){
+        width: 500px;
+        min-width: 500px;
+    }
+    @media(max-width: 767px){
+        right: -200px;        
+    }
+}
+.intro__pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+    position: relative;
+    bottom: 40px;
+    text-align: start;
+}
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    background: #fff;
+}
+.intro__pagination.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    width: 60px;
+    border-radius: 4px;
+}
+.intro__pagination.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 8px;
+    margin-right: 8px;
+}

@@ -1,0 +1,63 @@
+// modal
+.modal {
+  &-header {
+    padding: 45px;
+    padding-bottom: 25px;
+    border-bottom: none;
+  }
+
+  &-body {
+    padding: 45px;
+    padding-top: 0;
+  }
+
+  &-title {
+    font-size: 23px;
+  }
+
+  .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    background: none;
+    opacity: 1;
+    box-sizing: border-box;
+  }
+}
+
+.modal-order {
+  .modal-dialog {
+    max-width: 800px;
+  }
+
+  .modal-content {
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    padding-right: 60px;
+    border: none;
+    border-radius: 0;
+  }
+
+  .contacts-form { 
+
+    .input-form {
+      color: #666;
+      border-color: rgba(0, 0, 0, 0.25);
+      &::placeholder {
+        color: #666;
+      }
+    }
+
+    .form-text {
+      color: #323232;
+    }
+  }
+}
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 20px;
+}

@@ -1,0 +1,106 @@
+.projects {
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 70px;
+
+  &::before {
+    content: '';
+    background: rgba($color: #000000, $alpha: .9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.projects__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.projects-slider {
+  overflow: visible;
+}
+.projects-slide {
+  &__img {
+    width: 100%;
+    height: 252px;
+    object-fit: cover;
+
+    &-wrapper {
+      position: relative;
+      margin-bottom: 20px;
+      transition: opacity .2s linear;
+      &:hover {
+        opacity: .8;
+      }
+
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.24px;
+        line-height: 120%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        background: #FC7519;
+      }
+    }
+  }
+
+  &__text {
+    color: #fff;
+    opacity: .5;
+    letter-spacing: 0.42px;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    width: fit-content;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.48px;    
+    color: #fff;
+  }
+  &__cat {
+    color: #0070F4;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%; /* 14.4px */
+    letter-spacing: 0.6px;
+    text-transform: uppercase;    
+    border-radius: 20px;
+    border: 1px solid #2162AF;    
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    display: flex;
+    column-gap: 7px;
+    align-items: center;
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke: #0070F4;
+    }
+  }
+}
+.projects-service{
+  background: transparent;
+}
