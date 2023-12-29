@@ -30,6 +30,8 @@
 
   &__title {
     margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
     @media(max-width: 1199px){
       margin-bottom: 30px;
     }
@@ -89,6 +91,8 @@
 }
 
 .contacts-form {
+  position: relative;
+  z-index: 1;
   .input-form {
     color: #fff;
     font-size: 16px;
@@ -100,18 +104,34 @@
     border-bottom: 1px solid #fff;
     width: 100%;
     border-radius: 0;
+    &.form-control {
+      padding-left: 0;
+      background: transparent;
+      &:focus {
+        &+label {
+          color: #fff;
+        }
+      }
+    }
+    &+label {
+      padding-left: 0;  
+      &>* {
+        display: none;
+      }
+    }
 
     &::placeholder {
       color: #fff;
       letter-spacing: 0.48px;
+      font-size: 16px;
     }
   }
 
   .row {
     &:not(:last-child) {
-      margin-bottom: 35px;
+      margin-bottom: 15px;
       @media(max-width: 1199px){
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
       }
       @media(max-width: 575px){
         margin-bottom: 0;
@@ -127,6 +147,7 @@
     margin-top: 0;
     max-width: 290px;
     margin-left: auto;
+    font-size: 16px;
     @media(max-width: 575px){
       margin-left: unset;
 
@@ -136,14 +157,31 @@
   .agreement-wrapper {
     display: flex;
     column-gap: 20px;
+    margin-top: 40px;
     @media(max-width: 575px){
       flex-direction: column-reverse;
       row-gap: 20px;
+      margin-top: 20px;
     }
   }
   .input-wrapper {
     @media(max-width: 575px){
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.contacts-form-wrap {
+  position: relative;
+  &::before {
+    @media(max-width: 575px){
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: -30px;
+      width: calc(100% + 40px);
+      height: 100%;
+      background-color: #2162AF;
+      padding-top: 50px;
     }
   }
 }

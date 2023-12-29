@@ -364,9 +364,43 @@ h5 {
   font-family: 'latoregular';
   border-radius: 0;
 }
+
 .sect {
   padding-top: 0;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     padding-top: 75px;
   }
+}
+
+.form-control {
+  border: none;
+  background: transparent;
+
+  &:focus {
+    &+label {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+
+    }
+  }
+}
+
+.form-control {
+  &:focus {
+    &+label {     
+      // margin-left: -4px;
+    
+    }
+  }
+}
+
+.form-floating>label {
+  transform: none;
+  font-family: 'latomedium';
 }
