@@ -364,3 +364,9 @@ h5 {
   font-family: 'latoregular';
   border-radius: 0;
 }
+.sect {
+  padding-top: 0;
+  @media(max-width: 575px){
+    padding-top: 75px;
+  }
+}

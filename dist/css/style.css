@@ -13314,6 +13314,15 @@ h5 {
   border-radius: 0;
 }
 
+.sect {
+  padding-top: 0;
+}
+@media (max-width: 575px) {
+  .sect {
+    padding-top: 75px;
+  }
+}
+
 .button {
   background-color: #FC7519;
   display: flex;
@@ -14091,10 +14100,6 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.service {
-  padding-top: 0;
 }
 
 .service__nav-link {
