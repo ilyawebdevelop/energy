@@ -14203,6 +14203,7 @@ h5 {
 
 .services__pagination {
   margin-left: -10px;
+  z-index: 2;
 }
 
 .services__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
