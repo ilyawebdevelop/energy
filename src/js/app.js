@@ -18,6 +18,9 @@ var mySwiperIntro = new Swiper(introSlider, {
   speed: 800,
   spaceBetween: 10,
   effect: 'fade',
+  autoplay: {
+    delay: 7000,
+  },
   fadeEffect: {
     crossFade: true
   },
