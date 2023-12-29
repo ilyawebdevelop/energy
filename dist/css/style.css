@@ -13354,6 +13354,7 @@ h5 {
   padding-right: 32px;
   border-radius: 0;
   transition: background-color 0.2s linear;
+  width: fit-content;
 }
 @media (max-width: 1400px) {
   .button {
